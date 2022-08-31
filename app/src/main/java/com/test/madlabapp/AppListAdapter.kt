@@ -1,5 +1,6 @@
 package com.test.madlabapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +25,13 @@ class AppListAdapter(): RecyclerView.Adapter<AppListAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        TODO("Not yet implemented")
+        holder.rootItem.setOnClickListener {
+            holder.itemView.context.startActivity(Intent(holder.itemView.context, AppDetailsActivity::class.java))
+        }
+
+        holder.viewDetailsIv.setOnClickListener {
+            holder.itemView.context.startActivity(Intent(holder.itemView.context, AppDetailsActivity::class.java))
+        }
     }
 
     override fun getItemCount(): Int {
