@@ -94,6 +94,7 @@
                     android:background="@drawable/download_btn"
                     app:backgroundTint="@null"
                     android:elevation="20dp"
+                    android:textColor="@color/white"
                     android:text="Download Application"
                     android:textAllCaps="false"
                     android:textSize="16sp"
